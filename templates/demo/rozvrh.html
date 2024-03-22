@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>Rozvrh SPSEKE I.A</title>
+    <link rel="stylesheet" href="../static/style.css" />
+    <link rel="icon" type="image/x-icon" href="../static/images/logo.png" />
+</head>
+<body>
+
+<header>
+    <a class="header__branding" href="/skola?den=dnes">
+        <img class="header__branding__logo" src="../static/images/logo.png" alt="A logo of the secondary school of electrotechnics in Košice, Slovakia." />
+        <h1 class="header__branding__text">I.A <i>Všetko na jednom mieste</i></h1>
+    </a>
+    <nav class="header__navigation">
+        <ul class="header__navigation__buttons">
+            <li class="active">
+                <a href="/skola?den=dnes"><div>Čo sme robili v škole</div></a>
+            </li>
+            <li>
+                <a href="/kalendar?den=zajtra"><div>Čo mi treba na zajtra</div></a>
+            </li>
+            <li><a href="/rozvrh"><div class="active">Rozvrh</div></a></li>
+            <li><a href="https://drive.google.com/drive/folders/1YdkwXI14BU_72Soa5fF2_iyp5wBIuTy7?usp=sharing"><div>Materiály</div></a></li>
+            <li class="header__navigation__admin"><div><img class="header__navigation__icon" src="../static/images/icons/lock.ico" alt="A lock icon">Administrácia</div></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content">
+    <h1 class="main-header">Rozvrh pre II. skupinu</h1>
+    <table class="timetable">
+        <thead>
+            <tr>
+                <th class="timetable-cell--empty"></th>
+                <th>1. hodina</th>
+                <th>2. hodina</th>
+                <th>3. hodina</th>
+                <th>4. hodina</th>
+                <th>5. hodina</th>
+                <th>6. hodina</th>
+                <th>7. hodina</th>
+                <th>8. hodina</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Pondelok</th>
+                <td class="subject--slovina">SJL</td>
+                <td class="subject--telesna">TSV</td>
+                <td colspan="2" class="subject--anglina">ANJ</td>
+                <td class="subject--nemcina">NEJ</td>
+                <td colspan="2" class="subject--uvod-do-programovania">UDP</td>
+                <td class="subject--triednicka">TRH</td>
+            </tr>
+            <tr>
+                <th>Utorok</th>
+                <td class="subject--nemcina">NEJ</td>
+                <td class="subject--matika">MAT</td>
+                <td class="subject--fyzika">FYZ</td>
+                <td class="subject--slovina">SJL</td>
+                <td colspan="2" class="subject--robotika">ROB</td>
+                <td class="subject--hardver-pocitaca">HWP</td>
+            </tr>
+            <tr>
+                <th>Streda</th>
+                <td class="subject--fyzika">FYZ</td>
+                <td class="subject--elektrotechnika">ELK</td>
+                <td class="subject--etika">ETV</td>
+                <td class="subject--slovina">SJL</td>
+                <td class="subject--anglina">ANJ</td>
+                <td class="subject--nemcina">NEJ</td>
+                <td class="subject--matika">MAT</td>
+            </tr>
+            <tr>
+                <th>Štvrtok</th>
+                <td class="subject--matika">MAT</td>
+                <td class="subject--elektrotechnika">ELK</td>
+                <td colspan="2" class="subject--odborna-prax">ODP</td>
+                <td class="subject--fyzika">FYZ</td>
+                <td class="subject--telesna">TSV</td>
+                <td class="subject--slovina">SJL</td>
+            </tr>
+            <tr>
+                <th>Piatok</th>
+                <td colspan="2" class="subject--elektrotechnika">ELK</td>
+                <td class="subject--anglina">ANJ</td>
+                <td class="subject--matika">MAT</td>
+                <td colspan="2" class="subject--aplikovana-informatika">API</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <div class="socials">
+        <a href="https://github.com/FilipeeX" target="_blank"><img src="../static/images/icons/github.png" alt="The Github logo icon" /></a>
+        <a href="https://sk.linkedin.com/in/filip-karab-6933882b1" target="_blank"><img src="../static/images/icons/linkedin.ico" alt="The LinkedIn logo icon" /></a>
+        <a href="https://www.instagram.com/filip.karab/" target="_blank"><img src="../static/images/icons/instagram.ico" alt="The Instagram logo icon" /></a>
+        <a href="https://twitter.com/FilipeeX_" target="_blank"><img src="../static/images/icons/twitter.webp" alt="The Twitter, or X, logo icon" /></a>
+    </div>
+    <div class="credits">
+        <p>Filip Karab © 2024</p>
+    </div>
+</footer>
+
+</body>
+</html>

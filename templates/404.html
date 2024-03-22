@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>V škole SPSEKE I.A</title>
+    <link rel="stylesheet" href="../static/style.css" />
+    <link rel="icon" type="image/x-icon" href="../static/images/logo.png" />
+</head>
+<body>
+
+<header>
+    <a class="header__branding" href="/skola?den=dnes">
+        <img class="header__branding__logo" src="../static/images/logo.png" alt="A logo of the secondary school of electrotechnics in Košice, Slovakia." />
+        <h1 class="header__branding__text">I.A <i>Všetko na jednom mieste</i></h1>
+    </a>
+    <nav class="header__navigation">
+        <ul class="header__navigation__buttons">
+            <li class="active">
+                <a href="/skola?den=dnes"><div class="active">Čo sme robili v škole</div></a>
+            </li>
+            <li>
+                <a href="/kalendar?den=zajtra"><div>Čo mi treba na zajtra</div></a>
+            </li>
+            <li><a href="/rozvrh"><div>Rozvrh</div></a></li>
+            <li><a href="https://drive.google.com/drive/folders/1YdkwXI14BU_72Soa5fF2_iyp5wBIuTy7?usp=sharing"><div>Materiály</div></a></li>
+            <li class="header__navigation__admin"><div><img class="header__navigation__icon" src="../static/images/icons/lock.ico" alt="A lock icon">Administrácia</div></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content">
+    <div class="calendar">
+        <ul class="dates">
+            {{ calendar|safe }}
+        </ul>
+    </div>
+    <main>
+        <h1 class="main-header">Čo sme robili v škole {{ datum }}</h1>
+        <p class="views">{{ videni }} 👁 videní</p>
+        <ul class="classes">
+            {{ classes|safe }}
+        </ul>
+    </main>
+</div>
+
+<footer>
+    <div class="socials">
+        <a href="https://github.com/FilipeeX" target="_blank"><img src="../static/images/icons/github.png" alt="The Github logo icon" /></a>
+        <a href="https://sk.linkedin.com/in/filip-karab-6933882b1" target="_blank"><img src="../static/images/icons/linkedin.ico" alt="The LinkedIn logo icon" /></a>
+        <a href="https://www.instagram.com/filip.karab/" target="_blank"><img src="../static/images/icons/instagram.ico" alt="The Instagram logo icon" /></a>
+        <a href="https://twitter.com/FilipeeX_" target="_blank"><img src="../static/images/icons/twitter.webp" alt="The Twitter, or X, logo icon" /></a>
+    </div>
+    <div class="credits">
+        <p>Filip Karab © 2024</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,485 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+}
+
+*::selection {
+    background-color: rgba(74, 101, 255, 0.377);
+}
+
+body {
+    background-color: rgb(19, 19, 19);
+    color: rgb(216, 216, 216);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: scroll;
+}
+
+a {
+    display: inline-block; /* nahodou dobre bo vsetko na stranke je inline, toto ma neskor bodne do chrbtu */
+    width: fit-content;
+    height: fit-content;
+}
+
+header {
+    background-color: rgb(19, 19, 19);
+    padding: 20px 0;
+    font-size: 0;
+}
+
+.header__branding {
+    margin-left: 12.8vw;
+    width: fit-content;
+    display: inline;
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+}
+
+.header__branding__logo {
+    width: 70px;
+    height: 70px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.header__branding__text {
+    display: inline;
+    margin-left: 1vw;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.header__branding__text i {
+    margin-left: 0.3vw;
+    font-size: 0.75rem;
+    color: gray;
+    font-weight: 300;
+}
+
+.header__navigation {
+    display: inline;
+    margin-left: 6.5vw;
+    font-size: 0;
+}
+
+.header__navigation__buttons {
+    font-size: 0;
+}
+
+.header__navigation__buttons, .header__navigation__buttons a, .header__navigation__buttons li, .header__navigation__buttons div, .header__navigation__buttons img {
+    display: inline;
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+}
+
+.header__navigation__buttons li {
+    margin-right: 0.3vw;
+}
+
+.header__navigation__admin {
+    margin-left: 4vw;
+}
+
+.header__navigation__icon {
+    vertical-align: middle;
+    width: 20px;
+    margin-right: 0.6vw;
+}
+
+.header__navigation__buttons div {
+    background-color: rgb(48, 48, 48);
+    padding: 16px 1.5vw;
+    cursor: pointer;
+    transition: 500ms;
+    font-size: 1rem;
+    border-radius: 17px;
+}
+
+.active {
+    background-color: rgb(233, 233, 233) !important;
+    color: black !important;
+}
+
+.header__navigation__buttons li :hover {
+    background-color: rgb(37, 37, 37);
+    border-radius: 6px;
+}
+
+.header__navigation__admin div:active {
+    background-color: rgb(255, 35, 35);
+}
+
+.active:hover {
+    background-color: rgb(180, 180, 180) !important;
+}
+
+.content {
+    padding: 25px 0;
+    background-color: rgb(31, 31, 31);
+}
+
+.classes {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.classes li {
+    list-style: none;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+.classes__subject {
+    background-color: rgb(236, 236, 236) !important;
+    color: black;
+    border-radius: 4px 12px 12px 4px;
+    border-left: 5px blueviolet solid;
+    min-width: 31vw;
+    max-width: 360px;
+    height: fit-content;
+    padding: 20px;
+    transition: 500ms;
+}
+
+.classes__subject:hover {
+    background-color: rgb(209, 209, 209) !important;
+}
+
+.classes__subject h1 {
+    margin-bottom: 20px;
+}
+
+.double {
+    min-height: 170px;
+}
+
+.lessons {
+    float: right;
+    color: rgb(122, 122, 122);
+}
+
+footer {
+    background-color: rgb(19, 19, 19);
+    padding: 50px 0;
+    font-size: 0;
+}
+
+footer h1, footer p {
+    font-size: 1rem;
+}
+
+.credits {
+    font-weight: 600;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.socials {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.socials img {
+    width: 23px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.socials a {
+    margin: 0 0.2vw;
+}
+
+.socials img:hover {
+    margin: 0 44.4vw;
+    width: 35px;
+}
+
+.subject--slovina {
+    border-color: rgb(255, 43, 43) !important;
+}
+
+.subject--telesna {
+    border-color: gray !important;
+}
+
+.subject--anglina {
+    border-color: rgb(74, 255, 83) !important;
+}
+
+.subject--nemcina {
+    border-color: cornflowerblue !important;
+}
+
+.subject--matika {
+    border-color: rgb(100, 41, 238) !important;
+}
+
+.subject--uvod-do-programovania {
+    border-color: rgb(221, 255, 72) !important;
+}
+
+.subject--triednicka {
+    border-color: rgb(140, 51, 255) !important;
+}
+
+.subject--fyzika {
+    border-color: coral !important;
+}
+
+.subject--robotika {
+    border-color: goldenrod !important;
+}
+
+.subject--hardver-pocitaca {
+    border-color: rgb(87, 48, 48) !important;
+}
+
+.subject--elektrotechnika {
+    border-color: bisque !important;
+}
+
+.subject--odborna-prax {
+    border-color: rgb(88, 64, 64) !important;
+}
+
+.subject--aplikovana-informatika {
+    border-color: deeppink !important;
+}
+
+.subject--etika {
+    border-color: darkgreen !important;
+}
+
+.main-header {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.views {
+    width: fit-content;
+    margin: 0 auto;
+    color: gray;
+}
+
+.classes__subject img {
+    max-width: 120px;
+    max-height: 300px;
+}
+
+.component {
+    font-size: 0;
+}
+
+.component p {
+    font-size: 1rem;
+}
+
+.component h4 {
+    font-size: 1rem;
+}
+
+.homework {
+    margin-bottom: 0;
+}
+
+.homework__icon {
+    width: 30px;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 2.5px;
+}
+
+.homework__content {
+    display: inline-block;
+    margin-left: 0.4vw;
+    width: 28vw;
+}
+
+.homework__message {
+    max-width: 546px;
+}
+
+.homework__deadline {
+    color: rgb(70, 70, 70);
+    font-weight: 100;
+    font-size: 0.8rem !important;
+    float: right;
+    position: relative;
+    top: -7px;
+}
+
+.note {
+    margin-bottom: 17px;
+}
+
+.note__icon {
+    width: 35px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.note__content {
+    display: inline-block;
+    margin-left: 0.4vw;
+    width: 28vw;
+}
+
+.note__message {
+    max-width: 546px;
+}
+
+.attachment {
+    margin-bottom: 17px;
+}
+
+.attachment__icon {
+    width: 35px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.attachment__content {
+    display: inline-block;
+    margin-left: 0.4vw;
+    width: 28vw;
+}
+
+.attachment__title {
+    margin-bottom: 5px;
+}
+
+.attachment__images {
+    width: 27vw;
+}
+
+.attachment__images img {
+    max-width: 120px;
+    max-height: 300px;
+}
+.attachment__images a {
+    margin-right: 0.3vw;
+}
+
+.links {
+    margin-bottom: 17px;
+}
+
+.links__icon {
+    width: 35px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.links__content {
+    display: inline-block;
+    margin-left: 0.4vw;
+    width: 28vw;
+}
+
+.links__title {
+    margin-bottom: 5px;
+}
+
+.links__urls {
+    width: 27vw;
+}
+
+.links__urls a, .links__urls:visited {
+    display: block;
+    text-decoration: none;
+    color: blue;
+}
+
+.lesson {
+    margin-bottom: 17px;
+}
+
+.lesson__icon {
+    width: 35px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.lesson__content {
+    display: inline-block;
+    margin-left: 0.4vw;
+    width: 28vw;
+}
+
+.lesoon__message {
+    max-width: 546px;
+}
+
+.test {
+    margin-bottom: 0;
+}
+
+.test__icon {
+    width: 35px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.test__content {
+    display: inline-block;
+    margin-left: 0.4vw;
+    width: 28vw;
+}
+
+.test__message {
+    max-width: 546px;
+}
+
+.test__deadline {
+    color: rgb(70, 70, 70);
+    font-weight: 100;
+    font-size: 0.8rem !important;
+    float: right;
+    position: relative;
+    top: -7px;
+}
+
+.nic {
+    margin-bottom: 17px;
+}
+
+.nic__icon {
+    width: 35px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nic__content {
+    display: inline-block;
+    margin-left: 0.4vw;
+    width: 28vw;
+}
+
+.nic__message {
+    max-width: 546px;
+}
+
+.timetable {
+    margin: 20px auto;
+}
+
+.timetable td, .timetable th {
+    padding: 20px;
+    border: solid 2px;
+    vertical-align: middle;
+    width: min-content;
+    font-size: 1.2rem;
+    transition: 500ms;
+}
+
+.timetable td:hover {
+    padding: 45px;
+    border-width: 5px;
+}
+
+.timetable-cell--empty {
+    border: none !important;
+}
