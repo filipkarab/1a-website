@@ -33,6 +33,12 @@ header {
     display: inline;
     text-decoration: none;
     color: rgb(216, 216, 216);
+    transition: 500ms;
+    filter: grayscale(100%);
+}
+
+.header__branding:hover {
+    filter: grayscale(0%);
 }
 
 .header__branding__logo {
@@ -144,6 +150,10 @@ header {
 
 .classes__subject:hover {
     background-color: rgb(209, 209, 209) !important;
+}
+
+.classes__subject:active {
+    background-color: rgb(180, 180, 180) !important;
 }
 
 .classes__subject h1 {
@@ -426,11 +436,11 @@ footer h1, footer p {
 .test__content {
     display: inline-block;
     margin-left: 0.4vw;
-    width: 28vw;
+    width: 25vw;
 }
 
 .test__message {
-    max-width: 546px;
+    overflow-wrap: break-word;
 }
 
 .test__deadline {
@@ -442,23 +452,23 @@ footer h1, footer p {
     top: -7px;
 }
 
-.nic {
+.nothing {
     margin-bottom: 17px;
 }
 
-.nic__icon {
+.nothing__icon {
     width: 35px;
     display: inline-block;
     vertical-align: top;
 }
 
-.nic__content {
+.nothing__content {
     display: inline-block;
     margin-left: 0.4vw;
     width: 28vw;
 }
 
-.nic__message {
+.nothing__message {
     max-width: 546px;
 }
 
@@ -482,4 +492,56 @@ footer h1, footer p {
 
 .timetable-cell--empty {
     border: none !important;
+}
+
+.calendar {
+    width: max-content;
+    height: max-content;
+    text-align: center;
+    float: left;
+    margin-left: 2vw;
+    margin-top: 120px;
+}
+
+.calendar h3, .calendar p, .calendar a {
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+.selected a, .selected h3, .selected p {
+    font-weight: 700 !important;
+    font-size: 1.15rem;
+}
+
+.calendar hr {
+    width: 140px;
+    margin: 15px 0;
+    border-width: 1px 0 0 0;
+    border-color: rgb(99, 99, 99);
+}
+
+.dates li {
+    list-style: none;
+}
+
+main {
+    margin-left: 4vw;
+}
+
+.error {
+    width: fit-content;
+    margin: 0 auto 50px;
+}
+
+.error__header {
+    color: #ff2d2d;
+    text-align: center;
+    font-size: 25rem;
+}
+
+.error__message {
+    text-align: center;
+
 }

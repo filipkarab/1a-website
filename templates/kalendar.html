@@ -4,144 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1920,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <title>Kalendár SPSEKE I.A</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <link rel="icon" type="image/x-icon" href="../static/images/logo.png" />
 </head>
 <body>
 
 <header>
-    <a class="header__branding" href="/skola.html?den=dnes">
-        <img class="header__branding__logo" src="images/logo.png" alt="A logo of the secondary school of electrotechnics in Košice, Slovakia." />
+    <a class="header__branding" href="/skola?den=dnes">
+        <img class="header__branding__logo" src="../static/images/logo.png" alt="A logo of the secondary school of electrotechnics in Košice, Slovakia." />
         <h1 class="header__branding__text">I.A <i>Všetko na jednom mieste</i></h1>
     </a>
     <nav class="header__navigation">
         <ul class="header__navigation__buttons">
             <li class="active">
-                <a href="/skola.html?den=dnes"><div>Čo sme robili v škole</div></a>
+                <a href="/skola?den=dnes"><div>Čo sme robili v škole</div></a>
             </li>
             <li>
-                <a href="/kalendar.html?den=zajtra"><div class="active">Čo mi treba na zajtra</div></a>
+                <a href="/kalendar?den=zajtra"><div class="active">Čo mi treba na zajtra</div></a>
             </li>
-            <li><a href="/rozvrh.html"><div>Rozvrh</div></a></li>
+            <li><a href="/rozvrh"><div>Rozvrh</div></a></li>
             <li><a href="https://drive.google.com/drive/folders/1YdkwXI14BU_72Soa5fF2_iyp5wBIuTy7?usp=sharing"><div>Materiály</div></a></li>
-            <li class="header__navigation__admin"><div><img class="header__navigation__icon" src="images/icons/lock.ico" alt="A lock icon">Administrácia</div></li>
+            <li class="header__navigation__admin"><div><img class="header__navigation__icon" src="../static/images/icons/lock.ico" alt="A lock icon">Administrácia</div></li>
         </ul>
     </nav>
 </header>
 
 <div class="content">
-    <h1 class="main-header">Čo ti treba na 7.2.2024</h1>
-    <p class="views">26 👁 videní</p>
-    <ul class="classes">
-        <li>
-            <div class="classes__subject subject--nemcina">
-                <h1 class="lessons">1</h1>
-                <h1>Nemčina</h1>
-                <ul class="components">
-                    <li class="component nic">
-                        <img class="nic__icon" src="images/icons/nic.png" alt="An icon of an empty magnifying glass with a red cross through the glass" />
-                        <div class="nic__content">
-                            <h4 class="nic__title">Asi najskôr nič</h4>
-                            <p class="nic__message">Žiadna domáca alebo písomka sa na túto hodinu nenašla ¯\_(ツ)_/¯</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <div class="classes__subject subject--matika">
-                <h1 class="lessons">2</h1>
-                <h1>Matika</h1>
-                <ul class="components">
-                    <li class="component test">
-                        <img class="test__icon" src="images/icons/test.png" alt="A test icon" />
-                        <div class="test__content">
-                            <h4 class="test__title">Píšeme písomku</h4>
-                            <p class="test__message">Mnohočleny</p>
-                        </div>
-                        <p class="test__deadline">ohlásená v piatok (3.2.2024)</p>
-                    </li>
-                    <li class="component homework">
-                        <img class="homework__icon" src="images/icons/homework_backpack.png" alt="A backpack icon" />
-                        <div class="homework__content">
-                            <h4 class="homework__title">Domáca úloha</h4>
-                            <p class="homework__message">Spraviť príparvu na písomku z mnohočlenov na ML</p>
-                        </div>
-                        <p class="homework__deadline">z piatku (3.2.2024)</p>
-                    </li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <div class="classes__subject subject--fyzika">
-                <h1 class="lessons">3</h1>
-                <h1>Fyzika</h1>
-                <ul class="components">
-                    <li class="component nic">
-                        <img class="nic__icon" src="images/icons/nic.png" alt="An icon of an empty magnifying glass with a red cross through the glass" />
-                        <div class="nic__content">
-                            <h4 class="nic__title">Asi najskôr nič</h4>
-                            <p class="nic__message">Žiadna domáca alebo písomka sa na túto hodinu nenašla ¯\_(ツ)_/¯</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <div class="classes__subject subject--slovina">
-                <h1 class="lessons">4</h1>
-                <h1>Slovina</h1>
-                <ul class="components">
-                    <li class="component nic">
-                        <img class="nic__icon" src="images/icons/nic.png" alt="An icon of an empty magnifying glass with a red cross through the glass" />
-                        <div class="nic__content">
-                            <h4 class="nic__title">Asi najskôr nič</h4>
-                            <p class="nic__message">Žiadna domáca alebo písomka sa na túto hodinu nenašla ¯\_(ツ)_/¯</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <div class="classes__subject subject--robotika">
-                <h1 class="lessons">5-6</h1>
-                <h1>Robotika</h1>
-                <ul class="components">
-                    <li class="component nic">
-                        <img class="nic__icon" src="images/icons/nic.png" alt="An icon of an empty magnifying glass with a red cross through the glass" />
-                        <div class="nic__content">
-                            <h4 class="nic__title">Asi najskôr nič</h4>
-                            <p class="nic__message">Žiadna domáca alebo písomka sa na túto hodinu nenašla ¯\_(ツ)_/¯</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <div class="classes__subject subject--hardver-pocitaca">
-                <h1 class="lessons">7</h1>
-                <h1>Hardvér počítača</h1>
-                <ul class="components">
-                    <li class="component test">
-                        <img class="test__icon" src="images/icons/test.png" alt="A test icon" />
-                        <div class="test__content">
-                            <h4 class="test__title">Píšeme písomku</h4>
-                            <p class="test__message">Vstupy myš a klávesnica</p>
-                        </div>
-                        <p class="test__deadline">ohlásená v utorok (31.1.2024)</p>
-                    </li>
-                </ul>
-            </div>
-        </li>
-    </ul>
+    <div class="calendar">
+        <ul class="dates">
+            {{ calendar|safe }}
+        </ul>
+    </div>
+    <main>
+        <h1 class="main-header">Čo ti treba na {{ datum }}</h1>
+        <p class="views">{{ videni }} 👁 videní</p>
+        <ul class="classes">
+            {{ classes|safe }}
+        </ul>
+    </main>
 </div>
 
 <footer>
     <div class="socials">
-        <a href="https://github.com/FilipeeX" target="_blank"><img src="images/icons/github.png" alt="The Github logo icon" /></a>
-        <a href="https://sk.linkedin.com/in/filip-karab-6933882b1" target="_blank"><img src="images/icons/linkedin.ico" alt="The LinkedIn logo icon" /></a>
-        <a href="https://www.instagram.com/filip.karab/" target="_blank"><img src="images/icons/instagram.ico" alt="The Instagram logo icon" /></a>
-        <a href="https://twitter.com/FilipeeX_" target="_blank"><img src="images/icons/twitter.webp" alt="The Twitter, or X, logo icon" /></a>
+        <a href="https://github.com/FilipeeX" target="_blank"><img src="../static/images/icons/github.png" alt="The Github logo icon" /></a>
+        <a href="https://sk.linkedin.com/in/filip-karab-6933882b1" target="_blank"><img src="../static/images/icons/linkedin.ico" alt="The LinkedIn logo icon" /></a>
+        <a href="https://www.instagram.com/filip.karab/" target="_blank"><img src="../static/images/icons/instagram.ico" alt="The Instagram logo icon" /></a>
+        <a href="https://twitter.com/FilipeeX_" target="_blank"><img src="../static/images/icons/twitter.webp" alt="The Twitter, or X, logo icon" /></a>
     </div>
     <div class="credits">
         <p>Filip Karab © 2024</p>
