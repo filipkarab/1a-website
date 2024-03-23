@@ -6,11 +6,11 @@ from time import time
 import os.path
 
 conf = {
-    "host": "23.137.104.153",
+    "host": "XXX.XXX.XXX.XXX",
     "port": "3306",
-    "user": "u7402_yvBREAA9TW",
-    "password": "YMNfm^Ivmb3ZeV^e+GANyejK",
-    "database": "s7402_dsbot"
+    "user": "user",
+    "password": "password",
+    "database": "database"
 }
 
 cnx = connect(**conf)
